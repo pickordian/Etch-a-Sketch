@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css"> 
-    <title>Odin practice</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
 </head>
+
 <body>
+    <div class="page-container">
+        <h1 style="color:white;text-align:center"> Sketch whatever</h1>
+        <div class="sketch-container">
+            <div class="function-container">
+                <div class="function">
+                     <input class="function-comp" type="color">
+                     <button class="function-comp"> Set Color</button>
+                </div>
+                <div class="function">
+                <input class="function-comp" type="range" min="1" max="10">
+                <button class="function-comp"> Grid-size</button>
+                </div>
+                <div class="function">
+                <button class="function-comp">Clear</button>
+                </div>
 
-<footer>
+            </div>
+            <div class="grid-container"></div>
+        </div>
+    </div>
+    <header>
 
-</footer>
 </body>
 
 </html>

@@ -1,4 +1,49 @@
-footer{
-    color:rgb(16, 59, 97);
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
+}
+.page-container{
+    background-color: rgb(24, 23, 20);
+    height: 100vh;
+    flex-direction: column;
+    display:flex;
+}
+.sketch-container{
+    margin: 20px;
+    background-color:rgb(158, 138, 23);
+    flex:auto;
+    display:flex;
+}
+.function-container{
+     flex: 1 1 20%;
+     margin: 10px;
+     display:flex;
+     background-color: rgb(158, 138, 23);
+     flex-direction: column;
+     justify-content: space-between
+}
+.function{
+    margin-top: 30%;
+    margin-bottom: 30%;
+    background-color: rgb(158, 138, 23);
+    border-color: rgb(0, 0,0);
+    border-radius: 10px;
+    color:white;
+    flex: auto;
+    display:flex;
+    flex-direction: column;
+}
+.function-comp{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    flex: auto;
+    color: white;
+    background-color: black;
+
+}
+.grid-container{
+    margin: 10px;
+    background-color: rgb(24, 23, 20);
+    flex: 1 1 80%;
 }
