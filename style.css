@@ -2,48 +2,73 @@
     margin: 0;
     padding: 0;
 }
-.page-container{
-    background-color: rgb(24, 23, 20);
-    height: 100vh;
-    flex-direction: column;
-    display:flex;
-}
 .sketch-container{
     margin: 20px;
-    background-color:rgb(158, 138, 23);
-    flex:auto;
     display:flex;
+    height: 90vh;
+    border-style: solid;
+    border-color: yellow;
+    justify-content: space-between;
 }
-.function-container{
-     flex: 1 1 20%;
-     margin: 10px;
-     display:flex;
-     background-color: rgb(158, 138, 23);
-     flex-direction: column;
-     justify-content: space-between
-}
-.function{
-    margin-top: 30%;
-    margin-bottom: 30%;
-    background-color: rgb(158, 138, 23);
-    border-color: rgb(0, 0,0);
-    border-radius: 10px;
-    color:white;
-    flex: auto;
-    display:flex;
-    flex-direction: column;
-}
-.function-comp{
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    flex: auto;
-    color: white;
-    background-color: black;
 
-}
 .grid-container{
     margin: 10px;
-    background-color: rgb(24, 23, 20);
-    flex: 1 1 80%;
+    background-color: rgb(255, 250, 236);
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    flex: auto;
+    border-style: solid;
+    border-color: orange;
+    aspect-ratio: 1/1;
+} 
+.function-container{
+    margin: 10px;
+    background-color: rgb(255, 250, 236);
+    display: flex;
+    flex: auto;
+    border-style: solid;
+    border-color: orange;
+    aspect-ratio: 1/1;
+    justify-content: center;
+} 
+.grid{
+    background-color: rgb(224, 161, 161);
+    border-style: solid;
+}
+.grid-menu {
+    margin: 2%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#i_color{
+    width: 100px;
+    height: 100px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: orange;
+    background-color: black;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 10%;
+}
+button:hover{
+    background-color: rgb(233, 155, 83);
+    color:black;
+}
+label{
+    text-align: center;
+    color:red;
+    font-size: 20px;
 }

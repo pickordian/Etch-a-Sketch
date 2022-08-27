@@ -6,32 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script scr="script.js"> </script>
     <title>Etch-a-Sketch</title>
 </head>
 
-<body>
-    <div class="page-container">
-        <h1 style="color:white;text-align:center"> Sketch whatever</h1>
-        <div class="sketch-container">
-            <div class="function-container">
-                <div class="function">
-                     <input class="function-comp" type="color">
-                     <button class="function-comp"> Set Color</button>
-                </div>
-                <div class="function">
-                <input class="function-comp" type="range" min="1" max="10">
-                <button class="function-comp"> Grid-size</button>
-                </div>
-                <div class="function">
-                <button class="function-comp">Clear</button>
-                </div>
+<body style="background-color:black">
+    <h1 style="color:white;text-align:center"> Sketch whatever</h1>
+    <div class="sketch-container">
+        <div class="grid-container">
 
-            </div>
-            <div class="grid-container"></div>
         </div>
-    </div>
-    <header>
+        <div class="function-container" style="background-color:black;">
+            <div class="grid-menu">
+                <form>
+                    <label  for="i_color">Color:</label> <br>
+                    <input title="Click to choose a color" atl="click and hover to choose color"  type="color" id="i_color">
+                    <button atl="Click to select color"  title="Click to select this color" type="submit"> Select color</button>
+                </form>
+                <form>
+                    <label>Grid size:</label>
+                    <button atl="click to choose 16x16 grid" onlick="SizeGrid(16)"> 16x16</button>
+                    <button atl="click to choose 48x48 grid" onlick="SizeGrid(48)"> 48x48</button>
+                    <button atl="click to choose 64x64 grid" onlick="SizeGrid(64)"> 64x64</button>
+                </form>
+                <button atl="click to clear grid"type="submit" id="grid_clear">Clear</button>
+            </div>
 
+        </div>
+        <script>
+            function SizeGrid(grid_size){
+            console.log('hi');
+            // alert(noo);
+            // for( let i = 0; i < grid_size; i++){
+            // const grid_cont = document.querySelector('.grid-container');
+            // const new_grid = document.createElement('div');
+            // new_grid.classList.add('grid');
+            // grid_cont.appendChild(new_grid);
+            // }
+             }
+
+            </script>
 </body>
 
 </html>
