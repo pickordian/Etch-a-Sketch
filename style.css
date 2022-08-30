@@ -7,7 +7,7 @@
     display:flex;
     height: 90vh;
     border-style: solid;
-    border-color: yellow;
+    border-color: rgb(255, 255, 0);
     justify-content: space-between;
 }
 
@@ -15,11 +15,11 @@
     margin: 10px;
     background-color: rgb(255, 250, 236);
     display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
     flex: auto;
     border-style: solid;
-    border-color: orange;
+    border-color: rgb(255, 165, 0);
     aspect-ratio: 1/1;
 } 
 .function-container{
@@ -28,13 +28,12 @@
     display: flex;
     flex: auto;
     border-style: solid;
-    border-color: orange;
+    border-color: rgb(255, 165, 0);
     aspect-ratio: 1/1;
     justify-content: center;
 } 
 .grid{
-    background-color: rgb(224, 161, 161);
-    border-style: solid;
+    background-color: rgb(255, 250, 236);
 }
 .grid-menu {
     margin: 2%;
@@ -47,7 +46,7 @@
     width: 100px;
     height: 100px;
 }
-form{
+.func_menu{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,18 +56,18 @@ button{
     margin: 10px;
     padding: 10px;
     font-size: 20px;
-    color: orange;
-    background-color: black;
+    color: rgb(255, 165, 0);
+    background-color: rgb(0, 0, 0);
     border-style: solid;
-    border-color: orange;
+    border-color: rgb(255, 165, 0);
     border-radius: 10%;
 }
 button:hover{
     background-color: rgb(233, 155, 83);
-    color:black;
+    color:rgb(0, 0, 0);
 }
 label{
     text-align: center;
-    color:red;
+    color:rgb(255, 0, 0);
     font-size: 20px;
 }
