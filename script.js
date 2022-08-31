@@ -15,9 +15,9 @@ function SizeGrid(grid_size) {
         new_grid.setAttribute('onmousedown', 'MouseDown()');
         new_grid.setAttribute('onmouseup', 'MouseUp()');
         grid_cont.appendChild(new_grid);
-
     }
 function ClearGrid() {
+    func_a = [];
     const grid = document.querySelectorAll('.grid');
     grid.forEach(grid => {
         grid.remove();
