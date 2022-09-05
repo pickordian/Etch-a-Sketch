@@ -6,33 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <link rel="icon" type="image/x-icon" href="fabvicon.ico">
     <title>Etch-a-Sketch</title>
+    <style>
+    body{
+        font-family: "Press Start 2P", sans-serif;
+    }
+    button{
+
+        font-family: "Press Start 2P", sans-serif;
+    }
+    </style>
 </head>
 
 <body style="background-color:black">
-    <h1 style="color:white;text-align:center"> Sketch whatever</h1>
+    <div class="background-img">
+    <h1 style="color:white;text-align:center"> Sketch whatever <br> I don't care</h1>
     <div class="sketch-container">
         <div class="grid-container" ondragstart="return false;" ondrop="return false;">
 
         </div>
-        <div class="function-container" style="background-color:black;">
+        <div class="function-container">
             <div class="grid-menu">
                 <div class="func_menu">
+                    <p>To start sketching, click on the color <br> square to choose a color <br> <br> click on the Select Color button, then <br>
+                    select the grid size you want</p>
+                    <br> <br>
                     <label  for="i_color" >Color:</label> <br>
                     <input title="Click to choose a color" atl="click and hover to choose color"  type="color" id="i_color" value="#ffffff">
-                    <button atl="Click to select color"  title="Click to select this color" onclick="SetColor()"> Select color</button>
-                </div>
-                <div>
+                    <button class="big_button" atl="Click to select color"  title="Click to select this color" onmousedown="" onclick="SetColor()"> Select color</button>
                     <label>Grid size:</label>
-                    <button atl="click to choose 16x16 grid" onclick="SizeGrid(16)"> 16x16</button>
-                    <button atl="click to choose 48x48 grid" onclick="SizeGrid(48)"> 48x48</button>
-                    <button atl="click to choose 64x64 grid" onclick="SizeGrid(64)"> 64x64</button>
+                    <button class="grid_button" id="but_1" atl="click to choose 16x16 grid" onclick="SizeGrid('but_1',16)"> 16x16</button>
+                    <button class="grid_button" id="but_2" atl="click to choose 48x48 grid" onclick="SizeGrid('but_2',48)"> 48x48</button>
+                    <button class="grid_button" id="but_3" atl="click to choose 64x64 grid" onclick="SizeGrid('but_3',64)"> 64x64</button>
+                    <button class="big_button" atl="click to clear grid" onclick="ResetGrid()">Clear</button>
                 </div>
-                <button atl="click to clear grid" onclick="ResetGrid()">Clear</button>
+                
             </div>
 
         </div>
+    </div>
         <script src="script.js"> </script>
 </body>
 

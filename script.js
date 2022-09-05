@@ -2,8 +2,13 @@
 let grid_color = 'rgb(255,255,255)';
 let g_grid_size = 0;
 var func_a=[];
-function SizeGrid(grid_size) {
-    ClearGrid();
+var active_button;
+function SizeGrid(but_id, grid_size) {
+    ClearGrid(active_button);
+    active_button = but_id;
+    const button = document.getElementById(but_id);
+    button.style.backgroundColor = 'rgb(248, 223, 81)';
+    button.style.color = 'rgb(0,0,0)';
     const grid_cont = document.querySelector('.grid-container');
     grid_cont.style.setProperty('grid-template-columns', 'repeat(' + grid_size + ',1fr)');
     grid_cont.style.setProperty('grid-template-rows', 'repeat(' + grid_size + ',1fr)');
@@ -16,7 +21,12 @@ function SizeGrid(grid_size) {
         new_grid.setAttribute('onmouseup', 'MouseUp()');
         grid_cont.appendChild(new_grid);
     }
-function ClearGrid() {
+function ClearGrid(active_button) {
+    if (active_button != null){
+    const button = document.getElementById(active_button);
+    button.style.backgroundColor = 'rgb(0,0,0)' ;
+    button.style.color =  'rgb(248, 223, 81)';
+    }
     func_a = [];
     const grid = document.querySelectorAll('.grid');
     grid.forEach(grid => {
